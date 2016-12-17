@@ -168,7 +168,7 @@ def main(argv=None):
     shopping_basket = basket.Basket(goods, offers)
     for item in args.items:
         if not shopping_basket.add(item):
-            log('Item not in stock', INFO)
+            log('Item \'{}\' not in stock'.format(item), INFO)
 
     # Print the results
     print('Subtotal: £{:.2f}'.format(shopping_basket.subtotal/100))

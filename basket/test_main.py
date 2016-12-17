@@ -265,9 +265,9 @@ def test_main(capsys):
     assert expectd_op in stdout
 
 
-def test_main__unknown_prod(capsys):
+def test_main_unknown_prod(capsys):
     main.main(['pie', '--verbose'])
     stdout, _ = capsys.readouterr()
-    expectd_op = ('INFO: Item not in stock\nSubtotal: £0.00\n'
+    expectd_op = ('INFO: Item \'pie\' not in stock\nSubtotal: £0.00\n'
                   '(No offers available)\nTotal: £0.00')
     assert expectd_op in stdout
