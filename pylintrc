@@ -1,0 +1,19 @@
+[MESSAGES CONTROL]
+disable = locally-disabled,fixme,too-few-public-methods,duplicate-code
+
+[BASIC]
+good-names = i,j,k,ex,e,f,Run,_,cb,ns
+const-rgx = (([A-Z_][A-Z0-9_]*)|(__.*__)|(log))$
+
+[FORMAT]
+max-line-length = 79
+
+[DESIGN]
+max-statements = 24
+
+[REPORTS]
+reports = no
+
+[MASTER]
+load-plugins = pylint.extensions.check_docs
+
